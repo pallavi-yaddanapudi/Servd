@@ -313,10 +313,10 @@ Return ONLY a valid JSON object with this exact structure (no markdown, no expla
     }
   ],
   "nutrition": {
-    "calories": "calories per serving",
-    "protein": "grams",
-    "carbs": "grams",
-    "fat": "grams"
+    "calories": "calories per serving (NUMBER ONLY or RANGE like 200-350, NO words)",
+    "protein": "grams (NUMBER ONLY or RANGE, NO words)",
+    "carbs": "grams (NUMBER ONLY or RANGE, NO words)",
+    "fat": "grams (NUMBER ONLY or RANGE, NO words)"
   },
   "tips": [
     "General cooking tip 1",
@@ -342,6 +342,12 @@ IMPORTANT RULES FOR CUISINE:
 - Use lowercase only
 - Pick the closest match from the allowed values
 - If uncertain, use "other"
+
+IMPORTANT RULES FOR NUTRITION:
+- NEVER use words like "approximately", "about", "~", "around"
+- ONLY numeric values allowed
+- If unsure, return a numeric range (example: 200-350)
+- Do NOT include units inside the value
 
 Guidelines:
 - Make ingredients realistic and commonly available

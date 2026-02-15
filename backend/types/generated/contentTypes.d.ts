@@ -542,7 +542,7 @@ export interface ApiRecipeRecipe extends Struct.CollectionTypeSchema {
         'moroccan',
         'brazilian',
         'caribbean',
-        'middle - eastern',
+        'middle-eastern',
         'british',
         'german',
         'portuguese',
